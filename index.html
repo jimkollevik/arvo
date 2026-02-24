@@ -5,10 +5,93 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Arvo digital</title>
 	<link rel="stylesheet" type="text/css" href="default.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900" rel="stylesheet">
 </head>
 <body>
+<section id="content">
+	<header><h1>Arvo</h1></header>
+	<div class="container">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis. Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.br
+		<br><br>
+		nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.
 
-	<h1>Hello world!</h1>
+	</p>
+	</div>
+
+
+<div class="faq-container">
+<h2>Våra tjänster</h2>
+    <div class="faq-item">
+        <div class="faq-question">
+            <span class="faq-icon">+</span>
+            Hemsidor
+        </div>
+        <div class="faq-answer">
+            <p>Priset beror på projektets omfattning. Kontakta oss för en kostnadsfri offert.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            <span class="faq-icon">+</span>
+            Email & SMS marknadsföring (Marketing automation)
+        </div>
+        <div class="faq-answer">
+            <p>Normal leveranstid är 2–4 veckor beroende på projektets komplexitet.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            <span class="faq-icon">+</span>
+            Förvaltning & support
+        </div>
+        <div class="faq-answer">
+            <p>Normal leveranstid är 2–4 veckor beroende på projektets komplexitet.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            <span class="faq-icon">+</span>
+            Konsultering
+        </div>
+        <div class="faq-answer">
+            <p>Normal leveranstid är 2–4 veckor beroende på projektets komplexitet.</p>
+        </div>
+    </div>
+
+</div>
+</section>
+
+
+<script>
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+    const question = item.querySelector(".faq-question");
+    const icon = item.querySelector(".faq-icon");
+
+    question.addEventListener("click", () => {
+        item.classList.toggle("active");
+        const answer = item.querySelector(".faq-answer");
+
+        if (item.classList.contains("active")) {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+            icon.textContent = "–";
+        } else {
+            answer.style.maxHeight = null;
+            icon.textContent = "+";
+        }
+    });
+});
+</script>
 
 </body>
 </html>
