@@ -72,21 +72,8 @@ header h1:hover {
 .faq-answer p {
     margin: 15px 0;
 }
-/* ===== Mobil (standard) ===== */
-#content {
-  padding: 20px;
-}
-
-/* ===== Tablet ===== */
-@media (min-width: 768px) {
-  #content {
-    padding: 40px;
-  }
-}
-
-/* ===== Desktop ===== */
-@media (min-width: 1024px) {
-  #content {
-    padding: 80px;
-  }
+@media only screen and (max-width: 600px) {
+	#content {
+		width: 90%;
+	}
 }
