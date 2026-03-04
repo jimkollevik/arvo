@@ -72,6 +72,24 @@ header h1:hover {
 .faq-answer p {
     margin: 15px 0;
 }
+
+.booking-icon {
+    display: inline;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    animation: bounce-down 2s infinite;
+}
+
+@keyframes bounce-down {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(6px);
+    }
+}
+
 @media only screen and (max-width: 600px) {
 	#content {
 		width: 90%;
