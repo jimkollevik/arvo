@@ -80,8 +80,27 @@ header h1:hover {
     max-width: 94%;
     min-height: 650px;
     border: 0;
-    border-radius: 10px;
     display: block;
+    border-bottom: solid 1px #333
+}
+
+.contact {
+    margin-top: 40px;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.contact a {
+    color: #333;
+    text-decoration: none;
 }
 
 .booking-icon {
