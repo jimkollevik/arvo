@@ -74,6 +74,15 @@ header h1:hover {
     margin: 15px 0;
 }
 
+.booking iframe {
+    width: 100%;
+    max-width: 100%;
+    min-height: 650px;
+    border: 0;
+    border-radius: 10px;
+    display: block;
+}
+
 .booking-icon {
     display: inline;
     width: 22px;
@@ -101,5 +110,11 @@ header h1:hover {
     }
     header h1 {
         font-size: clamp(24px, 17vw, 146px);
+    }
+    .faq-item h3, .faq-answer p {
+        font-size: 16px;
+    }
+    .faq-container h2 {
+        font-size: 19px;
     }
 }
